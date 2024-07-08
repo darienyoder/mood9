@@ -46,3 +46,7 @@ nav li {
     cursor: pointer;
     color: gold;
 }
+
+nav li:hover {
+    color: white;
+}

@@ -25,3 +25,23 @@ function allow_scroll()
 {
     can_scroll = true
 }
+
+
+let touchstartY = 0
+let touchendY = 0
+
+function checkDirection() {
+    if (touchendY < touchstartY)
+        alert("up");
+    else
+        alert("down");
+}
+
+window.addEventListener('touchstart', e => {
+  touchstartY = e.changedTouches[0].screenY
+})
+
+window.addEventListener('touchmove', e => {
+  touchendY = e.changedTouches[0].screenY
+  checkDirection()
+})
