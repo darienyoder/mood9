@@ -27,21 +27,28 @@ function allow_scroll()
 }
 
 
-let touchstartY = 0
-let touchendY = 0
+var touchstartY = 0;
+var touchendY = 0;
+var can_touch_scroll = true;
 
 function checkDirection() {
     if (touchendY < touchstartY)
-        scroll_to(current_scroll + 1)
+        scroll_to(current_scroll + 1);
     else
-        scroll_to(current_scroll - 1)
+        scroll_to(current_scroll - 1);
 }
 
 window.addEventListener('touchstart', e => {
-  touchstartY = e.changedTouches[0].screenY
+  touchstartY = e.changedTouches[0].screenY;
+})
+
+window.addEventListener('touchstart', e => {
+  can_touch_scroll = true;
 })
 
 window.addEventListener('touchmove', e => {
-  touchendY = e.changedTouches[0].screenY
-  checkDirection()
+  touchendY = e.changedTouches[0].screenY;
+  if (can_touch_scroll)
+    checkDirection();
+  can_touch_scroll = false;
 })
