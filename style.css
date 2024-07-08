@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    color: white;
+}
+
+.slideshow {
+    background: url("static_background.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-content {
+    padding: 30px;
+}
+
+nav {
+    position: absolute;
+    right: 0px;
+    bottom: 50%;
+    /* background: white; */
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+nav li {
+    font-size: 20pt;
+    margin: 5px 0px;
+    cursor: pointer;
+    color: gold;
+}
