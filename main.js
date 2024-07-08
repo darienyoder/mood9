@@ -32,9 +32,9 @@ let touchendY = 0
 
 function checkDirection() {
     if (touchendY < touchstartY)
-        alert("up");
+        scroll_to(current_scroll + 1)
     else
-        alert("down");
+        scroll_to(current_scroll - 1)
 }
 
 window.addEventListener('touchstart', e => {
