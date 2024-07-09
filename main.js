@@ -1,14 +1,13 @@
 
 const max_scroll = 3
 
-setInterval(allow_scroll, 1000)
-
 window.addEventListener("wheel", event => {
     if (can_scroll)
     {
         scroll_to(current_scroll + Math.sign(event.deltaY))
+        can_scroll = false
+        setTimeout(allow_scroll, 1000)
     }
-    can_scroll = false
 });
 
 var can_scroll = true

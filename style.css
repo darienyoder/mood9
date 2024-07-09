@@ -5,33 +5,14 @@
 
 body {
     color: white;
+    background-color: black;
     overscroll-behavior: none;
-}
-
-.slideshow {
-    background: url("static_background.png");
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-    scroll-behavior: smooth;
-}
-
-.slide {
-    width: 100%;
-    height: 100%;
-}
-
-.slide-content {
-    padding: 30px;
 }
 
 nav {
     position: absolute;
     right: 0px;
     bottom: 50%;
-    /* background: white; */
     float: right;
 }
 
@@ -50,4 +31,106 @@ nav li {
 
 nav li:hover {
     color: white;
+}
+
+.slideshow {
+    background: url("static_background.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slide-content {
+    flex: 1 0 auto;
+    /* height: 100%; */
+    padding-top: 30px;
+    padding-left: 30px;
+    /* margin: 0px 30px; */
+    margin-right: 300px;
+    /* background: purple; */
+    display: flex;
+    flex-flow: column;
+}
+
+#logo {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.service-gallery {
+    margin-top: 10px;
+    flex: 1 1 auto;
+    display: flex;
+    /* flex-direction: row; */
+    align-content: space-between;
+    /* background: yellow; */
+}
+
+.service-wrapper {
+    flex: 1;
+    display: flex;
+    margin-right: 10px;
+    border-radius: 20px;
+    background: green;
+}
+
+.service {
+    /* width: 100%;
+    height: 100%; */
+    bottom: 0px;
+    right: 0px;
+    margin: 10px;
+    /* background: orange; */
+}
+
+.service h3 {
+    font-size: 20pt;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more {
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.profile-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.profile-card {
+    background: red;
+    width: 190px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.profile-card img {
+    border-radius: 100%;
+    width: 150px;
+    margin: 20px;
+}
+
+.profile-card h2 {
+    text-align: center;
+}
+
+.profile-card p {
+    margin: 5px;
 }
