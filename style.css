@@ -7,39 +7,57 @@ body {
     color: white;
     background-color: black;
     overscroll-behavior: none;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    flex-direction: row-reverse;
+    background: url("static_background.png");
 }
 
 nav {
-    position: absolute;
-    right: 0px;
-    bottom: 50%;
-    float: right;
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px;
+    margin-left: 0px;
+    padding-right: 30px;
 }
 
 nav li {
-    font-size: 20pt;
+    font-size: 30pt;
     margin: 5px 0px;
     cursor: pointer;
     color: gold;
+    white-space: nowrap;
 }
+
+nav li a {
+    position: relative;
+    left: 0px;
+    transition: left 0.1s;
+}
+
 
 nav li:hover {
     color: white;
 }
 
+#active-navlink a {
+    left: -20px;
+    color: white;
+}
+
 .slideshow {
-    background: url("static_background.png");
-    position: absolute;
+    /*position: absolute;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+    height: 100%;*/
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /*z-index: -1;*/
     scroll-behavior: smooth;
 }
 
@@ -51,45 +69,55 @@ nav li:hover {
 
 .slide-content {
     flex: 1 0 auto;
-    /* height: 100%; */
+    max-width: 100%;
     padding-top: 30px;
     padding-left: 30px;
     /* margin: 0px 30px; */
-    margin-right: 300px;
+    /*margin-right: 300px;*/
     /* background: purple; */
     display: flex;
     flex-flow: column;
 }
 
 #logo {
-    width: 200px;
+    width: 250px;
     margin-bottom: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex: 1 1 100%;
+    align-content: space-between;
+    max-width: 100%;
 }
 
 .service-gallery {
     margin-top: 10px;
-    flex: 1 1 auto;
-    display: flex;
-    /* flex-direction: row; */
-    align-content: space-between;
-    /* background: yellow; */
+    /*background: orange;*/
+}
+
+.profile-gallery {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    /*background: orange;*/
+    max-width: calc(100% - 30px);
 }
 
 .service-wrapper {
-    flex: 1;
-    display: flex;
+    flex: 1 1 25%;
+    /*display: flex;*/
     margin-right: 10px;
     border-radius: 20px;
     background: green;
 }
 
 .service {
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: 100%;
     bottom: 0px;
     right: 0px;
     margin: 10px;
-    /* background: orange; */
+     /*background: orange;*/
 }
 
 .service h3 {
@@ -108,17 +136,21 @@ nav li:hover {
     cursor: pointer;
 }
 
-.profile-gallery {
+.profile-wrapper {
+    flex: 1 1 33%;
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    margin-right: 50px;
+    /*border-radius: 20px;*/
+    /*background: green;*/
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-card {
+    flex: 1;
     background: red;
-    width: 190px;
-    display: inline-block;
     border-radius: 20px;
+    text-align: center;
 }
 
 .profile-card img {
@@ -128,9 +160,12 @@ nav li:hover {
 }
 
 .profile-card h2 {
-    text-align: center;
+
 }
 
 .profile-card p {
     margin: 5px;
+    text-align: left;
+    max-width: 100%;
+    background: purple;
 }

@@ -12,12 +12,19 @@ window.addEventListener("wheel", event => {
 
 var can_scroll = true
 
-var current_scroll = 0;
+var current_scroll = 1;
 
 function scroll_to(scroll_id)
 {
-    current_scroll = Math.min(Math.max(scroll_id, 0), max_scroll)
+    current_scroll = Math.min(Math.max(scroll_id, 1), max_scroll)
     document.getElementById(current_scroll.toString()).scrollIntoView(true);
+    for (var i = 0; i < max_scroll; i++)
+    {
+        if (i == current_scroll - 1)
+            document.getElementById("navlinks").children[i].id = "active-navlink";
+        else
+            document.getElementById("navlinks").children[i].id = "";
+    }
 }
 
 function allow_scroll()

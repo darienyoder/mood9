@@ -6,17 +6,17 @@
         <link rel="stylesheet" href="style.css">
         <script src="main.js" charset="utf-8"></script>
     </head>
-    <body>
+    <body onload="document.getElementsByClassName('slideshow')[0].scrollTo({top: 0, left: 0, behavior: 'instant'});">
         <nav>
-            <ul>
-                <li>
+            <ul id="navlinks">
+                <li id="active-navlink">
                     <a onclick="scroll_to(1)">mood9</a>
                 </li>
                 <li>
                     <a onclick="scroll_to(2)">Meet us</a>
                 </li>
                 <li>
-                    <a onclick="scroll_to(3)">Let's work together</a>
+                    <a onclick="scroll_to(3)">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -26,10 +26,11 @@
                     <img id="logo" src="mood9-logo.webp">
                     <h1>A NEW KIND OF PRODUCTION COMPANY.</h1>
                     <h2>we create story-focused creative content designed to leave an impact.</h2>
-                    <div class="service-gallery">
+                    <div class="gallery service-gallery">
                         <div class="service-wrapper">
                             <div class="service">
                                 <h3>Film & Television</h3>
+                                <p></p>
                             </div>
                         </div>
                         <div class="service-wrapper">
@@ -60,27 +61,36 @@
 
                     <h1>Our Team</h1>
 
-                    <div class="profile-gallery">
-                        <div class="profile-card">
-                            <img src="micah.jpg">
-                            <h2>Micah Beck</h2>
-                            <p>
-                                Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
-                            </p>
+                    <div class="gallery profile-gallery">
+                        <div class="profile-wrapper">
+                            <div class="profile-card">
+                                <img src="micah.jpg">
+                                <h2>Micah Beck</h2>
+                                <a href="micahbeck.com">micahbeck.com</a>
+                                <div class="bio">
+                                    <p>
+                                        Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="profile-card">
-                            <img src="micah.jpg">
-                            <h2>Micah Beck</h2>
-                            <p>
-                                Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
-                            </p>
+                        <div class="profile-wrapper">
+                            <div class="profile-card">
+                                <img src="olivia.jpg">
+                                <h2>Olivia Dal Pra</h2>
+                                <p>
+                                    Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
+                                </p>
+                            </div>
                         </div>
-                        <div class="profile-card">
-                            <img src="micah.jpg">
-                            <h2>Micah Beck</h2>
-                            <p>
-                                Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
-                            </p>
+                        <div class="profile-wrapper">
+                            <div class="profile-card">
+                                <img src="stella.jpg">
+                                <h2>Stella Naymik</h2>
+                                <p>
+                                    Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
+                                </p>
+                            </div>
                         </div>
                     </div>
 
