@@ -1,5 +1,15 @@
 
-const max_scroll = 3
+function main()
+{
+    for (var i = 0; i < document.getElementsByClassName("slide").length; i++)
+    {
+        document.getElementsByClassName("slide")[i].id = (i + 1).toString();
+        max_scroll += 1;
+    }
+    document.getElementsByClassName('slideshow')[0].scrollTo({top: 0, left: 0, behavior: 'instant'});
+}
+
+var max_scroll = 0;
 
 window.addEventListener("wheel", event => {
     if (can_scroll)

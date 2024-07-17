@@ -2,26 +2,30 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>mood9</title>
+        <title>mood9. | a media company</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="main.js" charset="utf-8"></script>
     </head>
-    <body onload="document.getElementsByClassName('slideshow')[0].scrollTo({top: 0, left: 0, behavior: 'instant'});">
+    <body onload="main()">
         <nav>
             <ul id="navlinks">
                 <li id="active-navlink">
                     <a onclick="scroll_to(1)">mood9</a>
                 </li>
                 <li>
-                    <a onclick="scroll_to(2)">Meet us</a>
+                    <a onclick="scroll_to(2)">About</a>
                 </li>
                 <li>
-                    <a onclick="scroll_to(3)">Contact</a>
+                    <a onclick="scroll_to(3)">Meet us</a>
+                </li>
+                <li>
+                    <a onclick="scroll_to(4)">Contact</a>
                 </li>
             </ul>
         </nav>
         <div class="slideshow">
-            <div id="1" class="slide">
+            <div class="slide">
                 <div class="slide-content">
                     <img id="logo" src="mood9-logo.webp">
                     <h1>A NEW KIND OF PRODUCTION COMPANY.</h1>
@@ -29,23 +33,38 @@
                     <div class="gallery service-gallery">
                         <div class="service-wrapper">
                             <div class="service">
-                                <h3>Film & Television</h3>
-                                <p></p>
+                                <video src="film.mp4" autoplay loop></video>
+                                <div class="service-content" id="service-1">
+                                    <h3>Film & Television</h3>
+                                    <p>Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck</p>
+                                </div>
                             </div>
                         </div>
                         <div class="service-wrapper">
                             <div class="service">
-                                <h3>Commercial</h3>
+                                <video src="commercial.mp4" autoplay loop></video>
+                                <div class="service-content" id="service-2">
+                                    <h3>Commercial</h3>
+                                    <p>Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck</p>
+                                </div>
                             </div>
                         </div>
                         <div class="service-wrapper">
                             <div class="service">
-                                <h3>Music Video</h3>
+                                <video src="musicvideo.mp4" autoplay loop></video>
+                                <div class="service-content" id="service-3">
+                                    <h3>Music Video</h3>
+                                    <p>Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck</p>
+                                </div>
                             </div>
                         </div>
                         <div class="service-wrapper">
                             <div class="service">
-                                <h3>More</h3>
+                                <video src="more.mp4" autoplay loop></video>
+                                <div class="service-content" id="service-4">
+                                    <h3>More</h3>
+                                    <p>Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -56,8 +75,18 @@
                 </div>
             </div>
 
-            <div id="2" class="slide">
+            <div class="slide">
                 <div class="slide-content">
+                    <h1>About mood9</h1>
+                    <p></p>
+                    <div class="center">
+                        <h3 class="learn-more" onclick="scroll_to(3)">Meet our team<br>V</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div id="profile-slide" class="slide-content">
 
                     <h1>Our Team</h1>
 
@@ -66,11 +95,11 @@
                             <div class="profile-card">
                                 <img src="micah.jpg">
                                 <h2>Micah Beck</h2>
-                                <a href="micahbeck.com">micahbeck.com</a>
+                                <!-- <a href="micahbeck.com">micahbeck.com</a> -->
                                 <div class="bio">
                                     <p>
-                                        Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
-                                    </p>
+                                        Micah Beck is Micah Beck is Micah Beck is Micah Beck is <a href="">How to be a Productive Member of Society</a> is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is <a href="">Bunkers</a> is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
+                                    <p>
                                 </div>
                             </div>
                         </div>
@@ -78,8 +107,9 @@
                             <div class="profile-card">
                                 <img src="olivia.jpg">
                                 <h2>Olivia Dal Pra</h2>
+                                <!-- <h3><i>Producer</i></h3> -->
                                 <p>
-                                    Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
+                                    Micah Beck is Micah Beck is Micah Beck is Micah Beck is <a href="">Cloud9</a> is Micah Beck is Micah Beck is Micah Beck is <a href="">Bunkers</a> is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
                                 </p>
                             </div>
                         </div>
@@ -88,16 +118,19 @@
                                 <img src="stella.jpg">
                                 <h2>Stella Naymik</h2>
                                 <p>
-                                    Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
+                                    Micah Beck is Micah Beck is Micah Beck is <a href="">KAYO!</a> is Micah Beck is Micah Beck is Micah Beck is <a href="">Dusty</a> is Micah Beck is Micah Beck is Micah Beck is <a href="">Bunkers</a> is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck is Micah Beck
                                 </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="center">
+                        <h3 class="learn-more" onclick="scroll_to(4)">Work With Us<br>V</h3>
                     </div>
 
                 </div>
             </div>
 
-            <div id="3" class="slide">
+            <div class="slide">
                 <div class="slide-content">
                     <h1>Contact Us</h1>
                 </div>
