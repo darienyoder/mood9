@@ -93,18 +93,11 @@ nav li:hover {
 .service-gallery {
     margin-top: 10px;
     flex: 1 1 100%;
-    /*z-index: 1;*/
-    /*background: orange;*/
 }
-
-/*#profile-slide {
-    justify-content: center;
-}*/
 
 .profile-gallery {
     margin-top: 20px;
-    margin-bottom: 50px;
-    /*background: orange;*/
+    /* margin-bottom: 50px; */
     max-width: calc(100% - 30px);
     align-items: flex-start;
 }
@@ -114,7 +107,6 @@ nav li:hover {
     /*display: flex;*/
     margin-right: 10px;
     border-radius: 20px;
-    /*background: green;*/
 }
 
 .service {
