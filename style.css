@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     font-family: sans-serif;
@@ -11,6 +12,8 @@ body {
     position: absolute;
     top: 0px;
     bottom: 0px;
+    left: 0px;
+    right: 0px;
     flex-direction: row-reverse;
     background: url("static_background.png");
 }
@@ -68,7 +71,7 @@ nav li:hover {
 }
 
 .slide-content {
-    flex: 1 0 auto;
+    flex: 1;/* 0 auto;*/
     max-width: 100%;
     padding-top: 30px;
     padding-left: 30px;
@@ -93,6 +96,7 @@ nav li:hover {
 .service-gallery {
     margin-top: 10px;
     flex: 1 1 100%;
+    max-width: 100%;
 }
 
 .profile-gallery {
@@ -106,6 +110,7 @@ nav li:hover {
     flex: 1 1 25%;
     /*display: flex;*/
     margin-right: 10px;
+    margin-bottom: 10px;
     border-radius: 20px;
 }
 
@@ -203,6 +208,7 @@ nav li:hover {
     flex: 1 1 33%;
     display: flex;
     margin-right: 50px;
+    margin-bottom: 20px;
     /*border-radius: 20px;*/
     /*background: green;*/
     align-items: center;
@@ -240,4 +246,39 @@ nav li:hover {
     max-width: 100%;
     /* font-size: 14pt; */
     /*background: purple;*/
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+
+    body {
+        flex-direction: column-reverse;
+    }
+
+    nav {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0px;
+    }
+
+    #active-navlink a {
+        left: 0px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .profile-wrapper {
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .profile-card img {
+        float: left;
+    }
+
 }
