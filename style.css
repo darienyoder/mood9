@@ -58,6 +58,7 @@ nav li:hover {
     /*position: absolute;
     width: 100%;
     height: 100%;*/
+    flex: 1;
     overflow-y: hidden;
     overflow-x: hidden;
     /*z-index: -1;*/
@@ -254,14 +255,34 @@ nav li:hover {
         flex-direction: column-reverse;
     }
 
+    #logo {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
     nav {
         text-align: center;
         padding-bottom: 30px;
     }
 
+    nav ul {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        align-content: space-around;
+    }
+
     nav li {
         display: inline;
         margin: 0px;
+        flex: 1;
     }
 
     #active-navlink a {
@@ -272,6 +293,14 @@ nav li:hover {
         flex-direction: column;
     }
 
+    .service-content h3 {
+        font-size: 7vw;
+    }
+
+    .service-content p {
+        font-size: 3vw;
+    }
+
     .profile-wrapper {
         margin-bottom: 20px;
         margin-right: 0px;
@@ -279,6 +308,10 @@ nav li:hover {
 
     .profile-card img {
         float: left;
+    }
+
+    .learn-more {
+        font-size: 4vw;
     }
 
 }
