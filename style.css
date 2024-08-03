@@ -205,6 +205,16 @@ nav li:hover {
     cursor: pointer;
 }
 
+.about-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
 .profile-wrapper {
     flex: 1 1 33%;
     display: flex;
@@ -269,7 +279,9 @@ nav li:hover {
 
     nav {
         text-align: center;
+        padding-top: 30px;
         padding-bottom: 30px;
+        background-color: black;
     }
 
     nav ul {
@@ -301,13 +313,26 @@ nav li:hover {
         font-size: 3vw;
     }
 
+    .about-content p {
+        font-size: 5vw;
+    }
+
     .profile-wrapper {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         margin-right: 0px;
     }
 
     .profile-card img {
         float: left;
+        width: 25%;
+    }
+
+    .profile-card h2 {
+        font-size: 5vw;
+    }
+
+    .profile-card p {
+        font-size: 3vw;
     }
 
     .learn-more {
