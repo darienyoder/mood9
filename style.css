@@ -1,0 +1,89 @@
+
+body {
+    margin: 0px;
+    padding: 50px;
+    height: calc(100vh - 100px);
+    background-image: url("static_background.png");
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: white;
+    font-size: 150%;
+}
+
+header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: default;
+}
+
+header > * {
+    display: block;
+}
+
+#logo {
+    flex: 1;
+    /* height: 50vh; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: purple; */
+}
+
+
+#logo img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    /* opacity : 0%; */
+    scale: 0%;
+    transition: scale 1s;
+}
+
+h1 {
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    /* width: 100px;
+    height: 100px; */
+    padding: 20px;
+    margin: 10px;
+    background-color: red;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+
+#bottom-pane {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    min-height: 100vh;
+    top: 100%;
+    background-color: gray;
+    background: url("https://mood9.studio/wp-content/uploads/2024/05/Screenshot-2024-05-02-at-12.38.21%E2%80%AFPM.png");
+    transition: top 1s;
+}
+
+#bottom-pane > div {
+    display: none;
+}
+
+#bottom-pane > .selected {
+    display: block;
+}
