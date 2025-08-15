@@ -30,6 +30,10 @@ function process()
     bgX += 50 + Math.floor(Math.random() * 100);
     bgY += 50 + Math.floor(Math.random() * 100);
     document.body.style.backgroundPosition = bgX + "px " + bgY + "px";
+    for (var element of document.getElementsByClassName("static-bg"))
+    {
+        element.style.backgroundPosition = bgX + "px " + bgY + "px";
+    }
 
     for (i in [0, 0, 0, 0, 0])
     {

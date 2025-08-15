@@ -61,7 +61,11 @@ nav {
     height: 100px; */
     padding: 20px;
     margin: 10px;
-    background-color: red;
+    /* background-color: white;
+    background: url("gradient.png");
+    background-size: cover;
+    background-blend-mode: darken; */
+    /* filter:brightness(30%); */
 }
 
 .nav-link:hover {
@@ -76,7 +80,8 @@ nav {
     min-height: 100vh;
     top: 100%;
     background-color: gray;
-    background: url("https://mood9.studio/wp-content/uploads/2024/05/Screenshot-2024-05-02-at-12.38.21%E2%80%AFPM.png");
+    background: url("gradient.png");
+    background-size: cover;
     transition: top 1s;
 }
 
@@ -85,5 +90,8 @@ nav {
 }
 
 #bottom-pane > .selected {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
 }
