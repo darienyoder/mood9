@@ -8,29 +8,35 @@
         <script src="main.js" charset="utf-8"></script>
     </head>
     <body onload="main();">
-        <div style="position:absolute;top:0px;left:0px;width:100%;height:100%;background:url('https://mood9.studio/wp-content/uploads/2024/05/IMG_5697.jpg');z-index:-1;opacity:10%;"></div>
-        <div style="position:absolute;top:0px;left:0px;background:red;">This site is still in development.<br>Designs are not final.</div>
-            <div id="logo">
-                <img src="m.png">
-                <img src="o1.png">
-                <img src="o2.png">
-                <img src="d.png">
-                <img src="9.png">
+            <div style="position:absolute;top:0px;left:0px;width:100%;height:100%;background:url('https://mood9.studio/wp-content/uploads/2024/05/IMG_5697.jpg');z-index:-1;opacity:10%;"></div>
+            <!-- <div style="position:absolute;top:0px;left:0px;background:red;">This site is still in development.<br>Designs are not final.</div> -->
+
+            <!--  -->
+            <div id="logo-wrapper">
+                <div id="logo">
+                    <img src="m.png">
+                    <img src="o1.png">
+                    <img src="o2.png">
+                    <img src="d.png">
+                    <img src="9.png">
+                </div>
             </div>
+            <!--  -->
             <header>
                 <h1>A NEW KIND OF MEDIA COMPANY</h1>
                 <h2>we create story-focused creative content designed to leave an impact.</h2>
             </header>
+            <!--  -->
             <nav>
-                <div class="nav-link" style="background-color:#c06a29;" onclick="open_pane(0);">
+                <div class="nav-link" onclick="open_pane(0);">
                     About
                 </div>
 
-                <div class="nav-link" style="background-color:#c06a29" onclick="open_pane(1);">
+                <div class="nav-link" onclick="open_pane(1);">
                     Our Work
                 </div>
 
-                <div class="nav-link" style="background-color:#c06a29" onclick="open_pane(2);">
+                <div class="nav-link" onclick="open_pane(2);">
                     Contact
                 </div>
             </nav>
@@ -39,13 +45,13 @@
                 <!-- About -->
                 <div>
                     <div style="background-color: #00000060; height:100px; padding:10px; display:flex; flex-direction: row; align-items:center; justify-content:center; position:relative;">
-                        <img src="mood9-logo.webp" height="100%">
+                        <img class="header-img" src="mood9-logo.webp" height="100%">
                         <div style="flex:1;"></div>
                         <h1 style="position:absolute; top:20px; font-size: 80px; left:0px; width:100%; text-align:center; pointer-events:none;">About</h1>
-                        <img src="x.png" onclick="close_pane();" style="aspect-ratio: 1; height: 100%; cursor:pointer;">
+                        <img src="x.png" onclick="close_pane();" style="aspect-ratio: 1; height: 100px; cursor:pointer;">
                     </div>
                     <div style="flex:1;">
-                        <div class="static-bg" style="width:50%; margin-inline:auto; margin-top:50px; padding: 30px 60px; background-image: url('static_background.png'); background-color: #363636;">
+                        <div class="static-bg">
                             <p>
 we recognize the importance of storytelling in today’s world & how much of an impact it can make.<br><br>
 
@@ -56,7 +62,7 @@ we believe that the best content is the stuff that can touch hearts and truly re
 mood9 is here to save the world. we’re bohemians at heart, starting a revolution of indie media with depth and a willingness to try new things.
                             </p>
                         </div>
-                        <div class="static-bg" style="width:50%; margin-inline:auto; margin-top:50px; padding: 30px 60px; background-image: url('static_background.png'); background-color: #363636;">
+                        <div class="static-bg">
                             <p>
 
                                 <h2>these are our services:</h2>
@@ -85,19 +91,32 @@ mood9 is here to save the world. we’re bohemians at heart, starting a revoluti
                 <!-- Work -->
                 <div>
                     <div style="background-color: #00000060; height:100px; padding:10px; display:flex; flex-direction: row; align-items:center; justify-content:center; position:relative;">
-                        <img src="mood9-logo.webp" height="100%">
+                        <img class="header-img" src="mood9-logo.webp" height="100%">
                         <div style="flex:1;"></div>
                         <h1 style="position:absolute; top:20px; font-size: 80px; left:0px; width:100%; text-align:center; pointer-events:none;">Our Work</h1>
-                        <img src="x.png" onclick="close_pane();" style="aspect-ratio: 1; height: 100%; cursor:pointer;">
+                        <img src="x.png" onclick="close_pane();" style="aspect-ratio: 1; height: 100px; cursor:pointer;">
                     </div>
                 </div>
                 <!-- Contact -->
                 <div>
                     <div style="background-color: #00000060; height:100px; padding:10px; display:flex; flex-direction: row; align-items:center; justify-content:center; position:relative;">
-                        <img src="mood9-logo.webp" height="100%">
+                        <img class="header-img" src="mood9-logo.webp" height="100%">
                         <div style="flex:1;"></div>
                         <h1 style="position:absolute; top:20px; font-size: 80px; left:0px; width:100%; text-align:center; pointer-events:none;">Contact</h1>
-                        <img src="x.png" onclick="close_pane();" style="aspect-ratio: 1; height: 100%; cursor:pointer;">
+                        <img src="x.png" onclick="close_pane();" style="aspect-ratio: 1; height: 100px; cursor:pointer;">
+                    </div>
+                    <div style="flex:1;">
+                        <div class="static-bg">
+                            <p>
+                                <h2>LETS MAKE IT HAPPEN.</hh2>
+                                <h3>
+                                looking for content that leaves an impact? let’s work together and do just that.
+                                we can help you fully realize your dreams in the form of captivating media content.
+                                </h3>
+                                Leave a message at the tone.
+                                <br><i>[beep]</i>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
